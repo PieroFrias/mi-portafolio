@@ -27,23 +27,27 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4.8rem;
-}
-
-h2 {
     font-size: 4rem;
 }
 
+h2 {
+    font-size: 3.8rem;
+}
+
 h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 }
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* UTILIDADES */
@@ -55,7 +59,49 @@ img {
     margin: 0;
 }
 
+.white-text {
+    color: #fff;
+}
+
 /* HEADER */
+.site-header {
+    background-color: #1E2326;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    align-self: flex-start;
+    order: -1;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.navegacion a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+.navegacion a:last-child {
+    margin-right: 0;
+}
+
+.barra h1 {
+    font-weight: 100;
+}
+
+.barra h1 span {
+    font-weight: 700;
+}
 
 /* SOBRE MI */
 
@@ -74,7 +120,7 @@ img {
     background-color: #fff;
     border-radius: 1.3rem;
     box-shadow: 0 3px 10px #a17a69;
-    padding: 3.5rem;
+    padding: 2.8rem 3.5rem;
     margin: 1rem;
 }
 
