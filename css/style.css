@@ -72,8 +72,7 @@ a {
 .col-3 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex: 0 0 calc(33.3% - 1rem);
+    align-items: center;
 }
 
 .col-6 {
@@ -92,6 +91,10 @@ a {
     margin-left: auto;
 }
 
+.seccion {
+    margin: 3rem auto;
+}
+
 /* HEADER */
 .site-header {
     background-color: #1E2326;
@@ -108,11 +111,11 @@ a {
     margin-right: 0;
 }
 
-.barra h1 {
+.texto-nombre h1 {
     font-weight: 100;
 }
 
-.barra h1 span {
+.texto-nombre h1 span {
     font-weight: 700;
 }
 
@@ -128,19 +131,23 @@ a {
     margin: 0 auto;
 }
 
-.icon {
-    width: 10rem;
-    height: 10rem;
-}
-
-.card {
+.card-skills {
     background-color: #fff;
     border-radius: 1.3rem;
     box-shadow: 0 3px 10px #a17a69;
     padding: 2.8rem 3.5rem;
+    flex: 0 0 calc(33.3% - 1rem);
     margin: 1rem;
 }
 
 /* PROYECTOS */
+.card-proyectos {
+    background-color: #fff;
+    border-radius: 1.3rem;
+    box-shadow: 0 3px 10px #a17a69;
+    padding: 3rem 5rem;
+    flex: 0 0 calc(33.3% - 1rem);
+    margin: 1rem;
+}
 
 /* CONTACTOS */
