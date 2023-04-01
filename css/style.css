@@ -2,21 +2,23 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
-    background-color: #c4c4c4;
+    /*background-color: #c4c4c4;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
 }
 
-/** GLOBALES **/
+/* GLOBALES */
 .contenedor {
-    max-width: 1200px;
+    width: 95%;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -44,7 +46,45 @@ img {
     max-width: 100%;
 }
 
-/* Utilidades */
+/* UTILIDADES */
 .centrar-texto {
     text-align: center;
 }
+
+.no-margin {
+    margin: 0;
+}
+
+/* HEADER */
+
+/* SOBRE MI */
+
+/* SKILLS */
+.skills {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 1.3rem;
+    box-shadow: 0 3px 10px #a17a69;
+    padding: 3.5rem;
+    margin: 1rem;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 0 calc(33.3% - 1rem);
+}
+
+/* PROYECTOS */
+
+/* CONTACTOS */
