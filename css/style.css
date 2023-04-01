@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
+h1, h3, h4 {
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -32,6 +32,8 @@ h1 {
 
 h2 {
     font-size: 3.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 h3 {
@@ -40,6 +42,10 @@ h3 {
 
 h4 {
     font-size: 2.6rem;
+}
+
+p {
+    font-family: 'Opens Sans', sans-serif;
 }
 
 img {
@@ -63,12 +69,14 @@ a {
     color: #fff;
 }
 
-/* HEADER */
-.site-header {
-    background-color: #1E2326;
+.col-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 0 calc(33.3% - 1rem);
 }
 
-.barra {
+.col-6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -82,6 +90,11 @@ a {
 
 .right {
     margin-left: auto;
+}
+
+/* HEADER */
+.site-header {
+    background-color: #1E2326;
 }
 
 .navegacion a {
@@ -104,8 +117,9 @@ a {
 }
 
 /* SOBRE MI */
-.imgSobre img {
-    width: 80%;
+.contenido-sobre-mi {
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 /* SKILLS */
@@ -125,13 +139,6 @@ a {
     box-shadow: 0 3px 10px #a17a69;
     padding: 2.8rem 3.5rem;
     margin: 1rem;
-}
-
-.col-3 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex: 0 0 calc(33.3% - 1rem);
 }
 
 /* PROYECTOS */
