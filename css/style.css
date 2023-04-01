@@ -104,6 +104,9 @@ a {
 }
 
 /* SOBRE MI */
+.imgSobre img {
+    width: 80%;
+}
 
 /* SKILLS */
 .skills {
