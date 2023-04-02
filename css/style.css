@@ -87,7 +87,8 @@ a {
     background-color: #5AE4A8;
     border: none;
     flex: 0 0 auto;
-    border-radius: 1rem; 
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
 }
 
 .btn:hover {
@@ -135,17 +136,104 @@ a {
 /* HEADER */
 .site-header {
     background-color: #1E2326;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navegacion {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 10px #a17a69;
+    padding: 2rem 0;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.mostrar_menu{
+    display: block;
 }
 
 .navegacion a {
-    font-size: 1.8rem;
-    display: inline-block;
-    margin-right: 2rem;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 2rem;
     text-transform: uppercase;
+    transition: .3s;
+    padding: 0 3rem;
+    color: #1E2326;
+}
+
+.navegacion a:hover {
+    border-bottom: 0.2rem solid #1BA96D;
+    color: #5AE4A8;
 }
 
 .navegacion a:last-child {
+    margin-bottom: 0;
     margin-right: 0;
+}
+
+.menu-movil {
+    display: block;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.menu-movil span {
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    transform-origin: 0 100%;
+    transition: all .6s;
+}
+
+.menu-movil span:last-child {
+    margin-bottom: 0;
+}
+
+.animate-menu-1 {
+    transform: rotate(45deg) translate(-0.2rem, 0.1rem);
+}
+
+.animate-menu-2 {
+    opacity: 0;
+    margin-left: -3rem;
+}
+
+.animate-menu-3 {
+    transform: rotate(-45deg) translate(-0.4rem, 0.2rem);
+}
+
+@media only screen and (min-width:768px) {
+    .navegacion {
+        display: block;
+        position: static;
+        background: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .menu-movil {
+        display: none;
+    }
+
+    .navegacion a {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-right: 2rem;
+        margin-bottom: 0;
+        color: #ffffff;
+        padding: 0 1rem;
+    }
 }
 
 .texto-nombre h1 {
