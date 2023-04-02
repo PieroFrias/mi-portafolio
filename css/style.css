@@ -113,6 +113,10 @@ a {
     align-items: center;
 }
 
+.alinear-caja-linea {
+    flex-direction: column;
+}
+
 .no-desbordar-caja {
     flex-wrap: wrap;
 }
@@ -245,12 +249,23 @@ a {
 }
 
 /* SOBRE MI */
+.img-sobre-mi {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
 .info-sobre-mi .btn {
-    padding: 0.8rem 3rem;
+    padding: 0.7rem 3rem;
 }
 
 .info-sobre-mi .derecha {
     justify-content: flex-end;
+}
+
+@media only screen and (max-width:767px) {    
+    .info-sobre-mi .btn {
+        flex: 1;
+    }
 }
 
 /* SKILLS */
