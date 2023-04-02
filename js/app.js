@@ -11,6 +11,10 @@ let camposForm1 = document.querySelector(".campos-form-1");
 let camposForm2 = document.querySelector(".campos-form-2");
 let camposForm3 = document.querySelector(".campos-form-3");
 
+let proyecto = document.querySelector(".proyecto");
+
+const scrollUp = document.querySelector("#scroll-up");
+
 // Animacion del menu móvil
 menuMovil.addEventListener("click", () => {
     menu1.classList.toggle("animate-menu-1");
@@ -37,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
             camposForm2.classList.add("separar-caja");
             camposForm3.classList.remove("alinear-caja-linea");
             camposForm3.classList.add("separar-caja");
+
+            proyecto.classList.remove("alinear-caja-linea");
+            proyecto.classList.add("separar-caja");
         }
         if (window.innerWidth < 768) {
             imgSobreMi.classList.add("img-sobre-mi");
@@ -50,6 +57,9 @@ document.addEventListener("DOMContentLoaded", function() {
             camposForm2.classList.remove("separar-caja");
             camposForm3.classList.add("alinear-caja-linea");
             camposForm3.classList.remove("separar-caja");
+
+            proyecto.classList.add("alinear-caja-linea");
+            proyecto.classList.remove("separar-caja");
         }
     }
 
@@ -58,4 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Ejecutar la función en cada cambio de tamaño de la ventana
     window.addEventListener("resize", ajustarTamanio);
+});
+
+// Hacer scroll hasta el inicio
+scrollUp.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+    });
 });

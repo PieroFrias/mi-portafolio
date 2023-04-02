@@ -304,6 +304,7 @@ img.img-contacto {
     padding: 3rem;
     margin: -30rem auto 0 auto;
     text-align: center;
+    flex-basis: 80%;
 }
 
 .contenido-form .campo {
@@ -332,6 +333,7 @@ img.img-contacto {
 @media only screen and (min-width:768px) {
     .contenido-form {
         padding: 5rem;
+        flex-basis: 50%;
     }
     
     .campo label {
@@ -347,6 +349,19 @@ img.img-contacto {
     .contenido-form .enviar .btn {
         flex: 1;
     }
+}
+
+/* SCROLL UP */
+.scroll-up {
+    position: fixed;
+    right: 0.7%;
+    bottom: 1%;
+    cursor: pointer;
+}
+  
+.up-arrow {
+    width: 4rem;
+    height: 4rem;
 }
 
 /* FOOTER */
