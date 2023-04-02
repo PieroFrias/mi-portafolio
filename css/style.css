@@ -301,9 +301,8 @@ img.img-contacto {
     background-color: #fff;
     border-radius: 1.3rem;
     box-shadow: 0 3px 10px #a17a69;
-    padding: 5rem;
+    padding: 3rem;
     margin: -30rem auto 0 auto;
-    width: 70%;
     text-align: center;
 }
 
@@ -316,7 +315,7 @@ img.img-contacto {
 }
 
 .campo label {
-    flex: 0 0 8rem;
+    align-self: flex-start;
 }
 
 .campo input:not([type="submit"]),
@@ -330,8 +329,24 @@ img.img-contacto {
     height: 10rem;
 }
 
-.contenido-form .enviar {
-    justify-content: flex-end;
+@media only screen and (min-width:768px) {
+    .contenido-form {
+        padding: 5rem;
+    }
+    
+    .campo label {
+        flex: 0 0 8rem;
+    }
+    
+    .contenido-form .enviar {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .contenido-form .enviar .btn {
+        flex: 1;
+    }
 }
 
 /* FOOTER */

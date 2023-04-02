@@ -7,6 +7,10 @@ let nav = document.querySelector(".navegacion");
 let sobreMi = document.querySelector(".sobre-mi");
 let imgSobreMi = document.querySelector(".img-sobre-mi");
 
+let camposForm1 = document.querySelector(".campos-form-1");
+let camposForm2 = document.querySelector(".campos-form-2");
+let camposForm3 = document.querySelector(".campos-form-3");
+
 // Animacion del menu móvil
 menuMovil.addEventListener("click", () => {
     menu1.classList.toggle("animate-menu-1");
@@ -26,12 +30,26 @@ document.addEventListener("DOMContentLoaded", function() {
             sobreMi.classList.add("separar-caja");
             sobreMi.classList.add("centrar-caja-h");
             sobreMi.classList.add("centrar-caja-v");
+
+            camposForm1.classList.remove("alinear-caja-linea");
+            camposForm1.classList.add("separar-caja");
+            camposForm2.classList.remove("alinear-caja-linea");
+            camposForm2.classList.add("separar-caja");
+            camposForm3.classList.remove("alinear-caja-linea");
+            camposForm3.classList.add("separar-caja");
         }
         if (window.innerWidth < 768) {
             imgSobreMi.classList.add("img-sobre-mi");
 
             sobreMi.classList.add("alinear-caja-linea");
             sobreMi.classList.remove("separar-caja");
+
+            camposForm1.classList.add("alinear-caja-linea");
+            camposForm1.classList.remove("separar-caja");
+            camposForm2.classList.add("alinear-caja-linea");
+            camposForm2.classList.remove("separar-caja");
+            camposForm3.classList.add("alinear-caja-linea");
+            camposForm3.classList.remove("separar-caja");
         }
     }
 
