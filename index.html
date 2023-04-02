@@ -1,118 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portafolio - Piero Frías</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="site-header">
-        <div class="col-6 contenedor white-text">
-            <div class="left texto-nombre">
+        <div class="caja separar-caja centrar-caja-v contenedor white-text">
+            <div class="texto-nombre">
                 <a href="/">
                     <h1 class="white-text no-margin">Piero<span>Frías</span></h1>
                 </a>
             </div>
 
-            <nav class="navegacion white-text right">
+            <nav class="navegacion white-text">
                 <a class="white-text" href="#sobre-mi">Sobre mí</a>
                 <a class="white-text" href="#skills">Skills</a>
                 <a class="white-text" href="#proyectos">Proyectos</a>
                 <a class="white-text" href="#contacto">Contacto</a>
             </nav>
-        </div><!--contenedor-->
+        </div>
+        <!--contenedor-->
     </header>
 
+    <!-- SECCIÓN SOBRE MI -->
     <section class="contenedor" id="sobre-mi">
-        <div class="col-6 contenido-sobre-mi">
-            <div class="left">
-                <img src="img/code.jpg" alt="Imagen de joven programando">
+        <div class="caja centrar-caja-v centrar-caja-h">
+            <div class="col-6">
+                <img src="img/code.jpg" alt="Imagen de joven programando" />
             </div>
 
-            <div class="right">
+            <div class="col-4 info-sobre-mi">
                 <h2 class="no-margin centrar-texto">Sobre mí</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus inventore tempore minus nemo, iste ullam illo laboriosam maiores repudiandae quos!</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                    sed dolorem fugit sapiente porro veniam pariatur dolore nostrum
+                    delectus inventore tempore minus nemo, iste ullam illo laboriosam
+                    maiores repudiandae quos!
+                </p>
+
+                <div class="caja derecha">
+                    <a href="#" class="btn">Ver CV</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- SECCIÓN SKILLS -->
     <section class="contenedor seccion" id="skills">
         <h2 class="centrar-texto no-margin">Skills</h2>
 
         <div class="skills">
-            <div class="col-3">
-                <div class="card-skills">
-                    <img src="img/html5.png" alt="Imagen Curso">
+            <div class="caja">
+                <div class="card-skills col-4">
+                    <img src="img/html5.png" alt="Imagen Curso" />
                 </div>
-        
-                <div class="card-skills">
-                    <img src="img/css3.png" alt="Imagen Curso">
+
+                <div class="card-skills col-4">
+                    <img src="img/css3.png" alt="Imagen Curso" />
                 </div>
-                
-                <div class="card-skills">
-                    <img src="img/js.png" alt="Imagen Curso">
+
+                <div class="card-skills col-4">
+                    <img src="img/js.png" alt="Imagen Curso" />
                 </div>
             </div>
-    
-            <div class="col-3">
-                <div class="card-skills">
-                    <img src="img/bootstrap.png" alt="Imagen Curso">
+
+            <div class="caja">
+                <div class="card-skills col-4">
+                    <img src="img/bootstrap.png" alt="Imagen Curso" />
                 </div>
-                
-                <div class="card-skills">
-                    <img src="img/git-logo-240.png" alt="Imagen Curso">
+
+                <div class="card-skills col-4">
+                    <img src="img/git-logo-240.png" alt="Imagen Curso" />
                 </div>
-                
-                <div class="card-skills">
-                    <img src="img/laravel.png" alt="Imagen Curso">
+
+                <div class="card-skills col-4">
+                    <img src="img/laravel.png" alt="Imagen Curso" />
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SECCIÓN PROYECTOS -->
     <section class="contenedor seccion" id="proyectos">
         <h2 class="no-margin centrar-texto">Proyectos</h2>
 
-        <div class="contenedor">
-            <div class="col-3">
-                <div class="card-proyectos">
-                    <img src="img/html5.png" alt="Imagen Curso">
-                </div>
-        
-                <div class="card-proyectos">
-                    <img src="img/css3.png" alt="Imagen Curso">
-                </div>
-                
-                <div class="card-proyectos">
-                    <img src="img/js.png" alt="Imagen Curso">
-                </div>
+        <div class="caja">
+            <div class="card-proyectos col-4">
+                <img src="img/html5.png" alt="Imagen Curso" />
             </div>
-    
-            <div class="col-3">
-                <div class="card-proyectos">
-                    <img src="img/bootstrap.png" alt="Imagen Curso">
-                </div>
-                
-                <div class="card-proyectos">
-                    <img src="img/git-logo-240.png" alt="Imagen Curso">
-                </div>
-                
-                <div class="card-proyectos">
-                    <img src="img/laravel.png" alt="Imagen Curso">
-                </div>
+
+            <div class="card-proyectos col-4">
+                <img src="img/css3.png" alt="Imagen Curso" />
+            </div>
+
+            <div class="card-proyectos col-4">
+                <img src="img/js.png" alt="Imagen Curso" />
             </div>
         </div>
     </section>
 
-    <section class="contenedor seccion" id="contacto">
+    <!-- SECCIÓN CONTACTO -->
+    <section class="seccion" id="contacto">
         <h2 class="no-margin centrar-texto">Contáctame</h2>
+
+        <div class="caja no-desbordar-caja centrar-caja-h">
+            <div class="col-12">
+                <img class="img-contacto" src="img/coding-man.jpg" alt="imagen contacto">
+            </div>
+
+            <div class="contenedor contenido-form col-6">
+                <form action="#">
+                    <div class="caja separar-caja campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+    
+                    <div class="caja separar-caja campo">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="Tu Correo Electrónico">
+                    </div>
+    
+                    <div class="caja separar-caja campo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                    
+                    <div class="caja campo enviar">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+
+    <footer>
+        <div class="site-footer">
+            <div class="contenedor white-text">
+                <div class="caja separar-caja centrar-caja-v">
+                    <div class="texto-nombre">
+                        <a href="/">
+                            <p class="white-text no-margin footer-text">Piero<span>Frías</span></p>
+                        </a>
+                    </div>
+        
+                    <nav class="navegacion white-text">
+                        <a class="white-text" href="#sobre-mi">Sobre mí</a>
+                        <a class="white-text" href="#skills">Skills</a>
+                        <a class="white-text" href="#proyectos">Proyectos</a>
+                        <a class="white-text" href="#contacto">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="white-text copy centrar-texto">&copy; Todos los Derechos Reservados 2023 </p>
+    </footer>
 </body>
+
 </html>
