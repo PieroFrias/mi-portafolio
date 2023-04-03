@@ -1,12 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portafolio - Piero Frías</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Oswald:wght@300;400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+    <header class="site-header">
+        <div class="caja separar-caja centrar-caja-v contenedor white-text">
+            <div class="texto-nombre">
+                <a href="/">
+                    <h1 class="white-text no-margin">Piero<span>Frías</span></h1>
+                </a>
+            </div>
+
+            <div class="menu-movil">
+                <span class="menu-1"></span>
+                <span class="menu-2"></span>
+                <span class="menu-3"></span>
+            </div>
+
+            <nav class="caja navegacion white-text">
+                <a class="white-text" href="#sobre-mi">Sobre mí</a>
+                <a class="white-text" href="#skills">Skills</a>
+                <a class="white-text" href="#proyectos">Proyectos</a>
+                <a class="white-text" href="#contacto">Contacto</a>
+            </nav>
+        </div><!--contenedor-->
+    </header>
+
+    <!-- SECCIÓN SOBRE MI -->
+    <section class="contenedor" id="sobre-mi">
+        <div class="caja alinear-caja-linea sobre-mi">
+            <div class="img-sobre-mi col-6">
+                <img src="img/code.jpg" alt="Imagen de joven programando" />
+            </div>
+
+            <div class="col-4 info-sobre-mi">
+                <h2 class="no-margin centrar-texto">Sobre mí</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+                    sed dolorem fugit sapiente porro veniam pariatur dolore nostrum
+                    delectus inventore tempore minus nemo, iste ullam illo laboriosam
+                    maiores repudiandae quos!
+                </p>
+
+                <div class="caja derecha">
+                    <a href="#" class="btn">Ver CV</a>
+                </div>
+            </div>
+        </div>
+    </section><!--.contenedor-->
+
+    <!-- SECCIÓN SKILLS -->
+    <section class="contenedor seccion" id="skills">
+        <h2 class="centrar-texto no-margin">Skills</h2>
+
+        <div class="skills">
+            <div class="caja">
+                <div class="card-skills col-4">
+                    <img src="img/html5.png" alt="Imagen skill" />
+                </div>
+
+                <div class="card-skills col-4">
+                    <img src="img/css3.png" alt="Imagen skill" />
+                </div>
+
+                <div class="card-skills col-4">
+                    <img src="img/js.png" alt="Imagen skill" />
+                </div>
+            </div>
+
+            <div class="caja">
+                <div class="card-skills col-4">
+                    <img src="img/bootstrap.png" alt="Imagen skill" />
+                </div>
+
+                <div class="card-skills col-4">
+                    <img src="img/git-logo-240.png" alt="Imagen skill" />
+                </div>
+
+                <div class="card-skills col-4">
+                    <img src="img/laravel.png" alt="Imagen skill" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section class="contenedor seccion" id="proyectos">
+        <h2 class="no-margin centrar-texto">Proyectos</h2>
+
+        <div class="proyecto caja alinear-caja-linea">
+            <div class="proyecto-contenido card-proyectos col-4">
+                <img src="img/gasto-semanal.png" alt="Imagen proyecto" />
+                <p class="titulo-proyecto">Gasto semanal</p>
+
+                <div class="caja centrar-caja-h centrar-caja-v mas-info-proyecto">
+                    <div>
+                        <h3>Gasto semanal</h3>
+                        <p>Desarrollado en:</p>
+                        <p>HTML, CSS y JS</p>
+                        <a href="https://github.com/PieroFrias/GastoSemanal" target="_blank" class="btn">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-contenido card-proyectos col-4">
+                <img src="img/wayri.png" alt="Imagen proyecto" />
+                <p class="titulo-proyecto">Sistema de ventas</p>
+
+                <div class="caja centrar-caja-h centrar-caja-v mas-info-proyecto">
+                    <div>
+                        <h3 class="descripcion-proyecto">Sistema de ventas</h3>
+                        <p>Desarrollado en:</p>
+                        <p>HTML, Bootstrap, JS y Laravel 8</p>
+                        <a href="https://github.com/PieroFrias/proyecto-ts-wayri" target="_blank" class="btn">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-contenido card-proyectos col-4">
+                <img src="img/portafolio.png" alt="Imagen proyecto" />
+                <p class="titulo-proyecto">Mi portafolio</p>
+
+                <div class="caja centrar-caja-h centrar-caja-v mas-info-proyecto">
+                    <div>
+                        <h3 class="descripcion-proyecto">Mi portafolio</h3>
+                        <p>Desarrollado en:</p>
+                        <p>HTML, CSS y JS</p>
+                        <a href="https://github.com/PieroFrias/mi-portafolio" target="_blank" class="btn">Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="seccion" id="contacto">
+        <h2 class="no-margin centrar-texto">Contáctame</h2>
+
+        <div class="caja no-desbordar-caja centrar-caja-h">
+            <div class="col-12">
+                <img class="img-contacto" src="img/coding-man.jpg" alt="imagen contacto">
+            </div>
+
+            <div class="contenido-form col-6">
+                <form action="#">
+                    <div class="campos-form-1 caja alinear-caja-linea campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
     
+                    <div class="campos-form-2 caja alinear-caja-linea campo">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="Tu Correo Electrónico">
+                    </div>
+    
+                    <div class="campos-form-3 caja alinear-caja-linea campo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje"></textarea>
+                    </div>
+                    
+                    <div class="caja campo enviar">
+                        <input type="submit" value="Enviar" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrool up -->
+    <i class="scroll-up" id="scroll-up">
+        <img src="img/up.png" class="up-arrow" alt=""/>
+    </i>
+
+    <footer>
+        <div class="site-footer">
+            <div class="contenedor">
+                <div class="caja alinear-caja-linea centrar-caja-v redes-sociales">
+                    <p class="white-text redes-text">Mis Redes <span>Sociales</span></p>
+
+                    <nav class="caja separar-caja nav-redes">
+                        <a class="white-text" href="https://web.facebook.com/piero.friasmori" target="_blank"><i class="fa-brands fa-square-facebook iconos-redes"></i></a>
+                        <a class="white-text" href="#"><i class="fa-brands fa-square-twitter iconos-redes"></i></a>
+                        <a class="white-text" href="#"><i class="fa-brands fa-linkedin iconos-redes"></i></a>
+                        <a class="white-text" href="https://github.com/PieroFrias" target="_blank"><i class="fa-brands fa-github iconos-redes"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="white-text copy centrar-texto">&copy; Todos los Derechos Reservados 2023 </p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
+
 </html>
