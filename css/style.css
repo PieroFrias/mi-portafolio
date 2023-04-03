@@ -270,10 +270,19 @@ a {
     justify-content: flex-end;
 }
 
+.info-sobre-mi p span {
+    color: #1BA96D;
+    font-weight: 700;
+}
+
 @media only screen and (max-width:767px) {    
     .info-sobre-mi .btn {
         flex: 1;
     }
+}
+
+.derecha i {
+    color: #fff;
 }
 
 /* SKILLS */
