@@ -15,6 +15,12 @@ let proyecto = document.querySelector(".proyecto");
 
 const scrollUp = document.querySelector("#scroll-up");
 
+// Selectores para mantener seleccionado un link
+let sobre_mi = document.querySelector("#sobre-mi");
+let skills = document.querySelector("#skills");
+let proyectos = document.querySelector("#proyectos");
+let contacto = document.querySelector("#contacto");
+
 // Animacion del menu móvil
 menuMovil.addEventListener("click", () => {
     menu1.classList.toggle("animate-menu-1");
